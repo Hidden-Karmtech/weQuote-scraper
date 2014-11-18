@@ -51,12 +51,12 @@ googleApi.getDataTable(config.scraperInputId,
 									}
 								},function (error)
 								{
-									console.log(success);
+									console.log(error);
 								})
 					},
 					function (error)
 					{
-						console.log(success);
+						console.log(error);
 					});
 			//console.log(row.c[0]);
 			}

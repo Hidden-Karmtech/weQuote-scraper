@@ -1,5 +1,4 @@
-var http = require('request'),
-cheerio = require('cheerio');
+var http = require('request');
 
 var quoteIndex=0;
 

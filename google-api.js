@@ -53,8 +53,7 @@ module.exports = {
 		clearWorksheet : function(id)
 		{
 			var my_sheet = new googleSpreadsheet(id);
-			my_sheet.setAuth(config.googleUsername,config.googlePassword, function(err){
-			    my_sheet.getInfo( function( err, sheet_info ){
+			my_sheet.getInfo( function( err, sheet_info ){
 			        console.log( sheet_info.title + ' is loaded' );
 			        // use worksheet object if you want to forget about ids
 			        sheet_info.worksheets[0].getRows( function( err, rows ){
@@ -64,6 +63,6 @@ module.exports = {
 			            	};
 			        })
 			    });
-			})
+
 		}
 }
